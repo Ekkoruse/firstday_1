@@ -113,7 +113,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onCheckedChanged(RadioGroup group,int checkedId)
             {
-                if(checkedId==2131230847)
+                if(checkedId==2131230847)       //this is one id of 3 radiobutton
+                                                //i dont know how to identify this
                 {
                     tv2.setText("choose 1");
                 }
