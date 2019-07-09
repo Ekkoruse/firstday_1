@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v)
             {
-               // tv1.setText("aasd");
+                // tv1.setText("aasd");
                 iv1.setVisibility(View.VISIBLE);
                 sw1.setVisibility(View.VISIBLE);
                 cb1.setVisibility(View.VISIBLE);
@@ -114,7 +114,7 @@ public class MainActivity extends AppCompatActivity {
             public void onCheckedChanged(RadioGroup group,int checkedId)
             {
                 if(checkedId==2131230847)       //this is one id of 3 radiobutton
-                                                //i dont know how to identify this
+                //i dont know how to identify this
                 {
                     tv2.setText("choose 1");
                 }
