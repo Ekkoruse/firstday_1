@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="#161823"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="15sp"
+        android:layout_height="15sp"
+        android:layout_weight="1"
+        android:text="TextView"
+        android:textColor="#99ffffff" />
+
+
+        <TextView
+            android:id="@+id/textView_2"
+            android:layout_width="180sp"
+            android:layout_height="15sp"
+            android:layout_weight="1"
+            android:text="TextView"
+            android:textColor="#e6ffffff" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="15sp"
+            android:layout_height="15sp"
+            android:layout_weight="1"
+            tools:srcCompat="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="20dp"
+        android:layout_height="40sp"
+        android:layout_weight="1"
+        android:text="Button" />
+    <TextView
+        android:id="@+id/textView_3"
+        android:layout_width="35sp"
+        android:layout_height="13sp"
+        android:layout_weight="1"
+        android:text="TextView"
+        android:textColor="#7fffffff" />
+
+</LinearLayout>
