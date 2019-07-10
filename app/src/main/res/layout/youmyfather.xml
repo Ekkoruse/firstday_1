@@ -24,12 +24,12 @@
             android:text="TextView"
             android:textColor="#e6ffffff" />
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="15sp"
-            android:layout_height="15sp"
-            android:layout_weight="1"
-            tools:srcCompat="@tools:sample/avatars" />
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="15sp"
+        android:layout_height="15sp"
+        android:layout_weight="1"
+        tools:srcCompat="@tools:sample/avatars" />
 
     <Button
         android:id="@+id/button2"

@@ -18,7 +18,7 @@ public class hotpoint extends AppCompatActivity {
 
     @Override protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+     /*   setContentView(R.layout.activity_main);
         rc1 = findViewById(R.id.recyclerView);
         rc1.setLayoutManager(new LinearLayoutManager(this));
         rcad1 = new ReAdapter(this);
@@ -29,6 +29,6 @@ public class hotpoint extends AppCompatActivity {
             //list.add(data);
         }
         rcad1.setData(list);
-        rcad1.notifyDataSetChanged();
+        rcad1.notifyDataSetChanged();*/
     }
 }
