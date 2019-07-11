@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         TabLayout maytag;
-        maytag=findViewById(R.id.maylay);
+        maytag=findViewById(R.id.mayh);
         ViewPager page=findViewById(R.id.page);
         page.setAdapter(new FragmentPagerAdapter(getSupportFragmentManager()) {
             @Override
