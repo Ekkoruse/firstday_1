@@ -16,7 +16,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-public class FragmentA extends Fragment {
+public class FragmentC extends Fragment {
 
     @Nullable
     @Override
@@ -33,18 +33,19 @@ public class FragmentA extends Fragment {
         im_1.setImageResource(R.drawable.gra);
         AnimationSet ani=new AnimationSet(true);
         Animation iiy=AnimationUtils.loadAnimation(getContext(),R.anim.scale);
-        ani.addAnimation(iiy);
+        //ani.addAnimation(iiy);
         Animation iii=AnimationUtils.loadAnimation(getContext(),R.anim.alpha);
         iii.setRepeatCount(100);
-        ani.addAnimation(iii);
+       // ani.addAnimation(iii);
         // Animation sca= AnimationUtils.loadAnimation(getContext(),R.anim.scale);
         RotateAnimation ii=new RotateAnimation(0,360);
         ii.setRepeatCount(100);
         ii.setDuration(2000);
-      //  ani.addAnimation(ii);
+        ani.addAnimation(ii);
         im_1.startAnimation(ani);
     }
 
 
 }
+
 

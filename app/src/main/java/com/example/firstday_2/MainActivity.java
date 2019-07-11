@@ -6,7 +6,9 @@ import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.fragment.app.FragmentTransaction;
+import androidx.viewpager.widget.ViewPager;
 
 import android.provider.ContactsContract;
 import android.view.View;
@@ -22,24 +24,56 @@ import com.google.android.material.tabs.TabLayout;
 public class MainActivity extends AppCompatActivity {
 
     static int a=0;
+    @SuppressLint("WrongConstant")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //  setContentView(R.layout.activity_main);
         setContentView(R.layout.activity_main);
-        FragmentTransaction transaction=
+        /*FragmentTransaction transaction=
                 getSupportFragmentManager()
                         .beginTransaction();
         transaction.addToBackStack(null);
         transaction
                 .replace(R.id.fragmentA ,new FragmentA())
-                .commit();
-       // TabLayout maytag;
-       // maytag=findViewById(R.id.maytag);
-      //  maytag.addTab(maytag.newTab().setText("F1").setIcon(R.mipmap.ic_launcher));
-      //  maytag.addTab(maytag.newTab().setText("F2").setIcon(R.mipmap.ic_launcher));
-      //  maytag.addTab(maytag.newTab().setText("F3").setIcon(R.mipmap.ic_launcher));
-        Button btn1;
+                .commit();*/
+
+
+        TabLayout maytag;
+        maytag=findViewById(R.id.maylay);
+        ViewPager page=findViewById(R.id.page);
+        page.setAdapter(new FragmentPagerAdapter(getSupportFragmentManager()) {
+            @Override
+            public Fragment getItem(int position) {
+                switch (position)
+                {
+                    case 0:return new FragmentA();
+                    case 1:return new FragmentC();
+                    case 2:return new FragmentB();
+                }
+                return null;
+            }
+
+            @Override
+            public int getCount() {
+                return 3;
+            }
+            @Override
+            public CharSequence getPageTitle(int position)
+            {
+                CharSequence a="";
+                switch(position)
+                {
+                    case 0:a="animations1"; break;
+                    case 2:a="lottie"; break;
+                    case 1:a="animations2";break;
+                }
+                return a;
+            }
+        });
+        maytag.setupWithViewPager(page );
+
+       /* Button btn1;
         btn1=findViewById(R.id.button_3);
         btn1.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -68,7 +102,7 @@ public class MainActivity extends AppCompatActivity {
                             .commit();
                 }
             }
-        });
+        });*/
 
 
 
